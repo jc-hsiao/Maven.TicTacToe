@@ -18,13 +18,12 @@ public class Board {
             if(checkCol(main, i, 'X')){
                 win = true;
             }
-            if(checkDiaLeft(main,'X')){
-                win = true;
-            }
-            if(checkDiaRight(main,'X')) {
-                win = true;
-            }
-
+        }
+        if(checkDiaLeft(main,'X')){
+            win = true;
+        }
+        if(checkDiaRight(main,'X')) {
+            win = true;
         }
         return win;
     }
@@ -38,12 +37,12 @@ public class Board {
             if(checkCol(main, i, 'O')){
                 win = true;
             }
-            if(checkDiaLeft(main,'O')){
-                win = true;
-            }
-            if(checkDiaRight(main,'O')){
-                win = true;
-            }
+        }
+        if(checkDiaLeft(main,'O')){
+            win = true;
+        }
+        if(checkDiaRight(main,'O')){
+            win = true;
         }
         return win;
     }
